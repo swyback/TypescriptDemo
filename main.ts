@@ -1,3 +1,5 @@
 export{}
-let message = 'welcome back';
-console.log(message);
+let message = 'Todays date is ';
+let date: Date = new Date();
+console.log(message + date);
+//console.log(date);
