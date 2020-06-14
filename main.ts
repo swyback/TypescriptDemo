@@ -119,7 +119,7 @@ class Manager extends Employee{
     }
 }
 
-let m1 = new Manager('Jimmy');
+let m1 = new Manager('Jurgen Klopp');
 m1.delegateWork();
 m1.greet();
 console.log(m1.employeeName);
