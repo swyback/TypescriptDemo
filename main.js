@@ -104,7 +104,20 @@ var Manager = /** @class */ (function (_super) {
     };
     return Manager;
 }(Employee));
-var m1 = new Manager('Bruce');
+var m1 = new Manager('Jurgen Klopp');
 m1.delegateWork();
 m1.greet();
 console.log(m1.employeeName);
+var Player = /** @class */ (function (_super) {
+    __extends(Player, _super);
+    function Player(playerNmae) {
+        return _super.call(this, playerNmae) || this;
+    }
+    Player.prototype.playerNumber = function () {
+        console.log('Shirt Number 11 is ');
+    };
+    return Player;
+}(Manager));
+var p1 = new Player('Mo Salah');
+p1.playerNumber();
+console.log(p1.employeeName);

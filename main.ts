@@ -123,3 +123,17 @@ let m1 = new Manager('Jurgen Klopp');
 m1.delegateWork();
 m1.greet();
 console.log(m1.employeeName);
+
+class Player extends Manager{
+    constructor(playerNmae: string){
+        super(playerNmae);
+    }
+
+    playerNumber(){
+        console.log('Shirt Number 11 is ');
+    }
+}
+
+let p1 = new Player('Mo Salah');
+p1.playerNumber();
+console.log(p1.employeeName);
