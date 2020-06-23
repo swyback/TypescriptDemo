@@ -125,15 +125,18 @@ m1.greet();
 console.log(m1.employeeName);
 
 class Player extends Manager{
-    constructor(playerNmae: string){
-        super(playerNmae);
+    public playerid: number;
+    constructor(player: number){
+        super('Jurgen Klopp');
+        this.playerid = player;
     }
+    displayPlayerName(){
+        var player: [number, string][];
+        player = [[11, "Mo Salah"],[10, "Sadio Mane"],[9, "Bobby Firmino"]];
 
-    playerNumber(){
-        console.log('Shirt Number 11 is ');
+        console.log(player[this.playerid]);
     }
 }
 
-let p1 = new Player('Mo Salah');
-p1.playerNumber();
-console.log(p1.employeeName);
+let player = new Player(0);
+player.displayPlayerName();
