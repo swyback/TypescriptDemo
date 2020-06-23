@@ -110,6 +110,7 @@ m1.greet();
 console.log(m1.employeeName);
 var Player = /** @class */ (function (_super) {
     __extends(Player, _super);
+
     function Player(player) {
         var _this = _super.call(this, 'Jurgen Klopp') || this;
         _this.playerid = player;
@@ -124,3 +125,4 @@ var Player = /** @class */ (function (_super) {
 }(Manager));
 var player = new Player(0);
 player.displayPlayerName();
+
