@@ -104,7 +104,23 @@ var Manager = /** @class */ (function (_super) {
     };
     return Manager;
 }(Employee));
-var m1 = new Manager('Bruce');
+var m1 = new Manager('Jurgen Klopp');
 m1.delegateWork();
 m1.greet();
 console.log(m1.employeeName);
+var Player = /** @class */ (function (_super) {
+    __extends(Player, _super);
+    function Player(player) {
+        var _this = _super.call(this, 'Jurgen Klopp') || this;
+        _this.playerid = player;
+        return _this;
+    }
+    Player.prototype.displayPlayerName = function () {
+        var player;
+        player = [[11, "Mo Salah"], [10, "Sadio Mane"], [9, "Bobby Firmino"]];
+        console.log(player[this.playerid]);
+    };
+    return Player;
+}(Manager));
+var player = new Player(0);
+player.displayPlayerName();

@@ -123,3 +123,20 @@ let m1 = new Manager('Jurgen Klopp');
 m1.delegateWork();
 m1.greet();
 console.log(m1.employeeName);
+
+class Player extends Manager{
+    public playerid: number;
+    constructor(player: number){
+        super('Jurgen Klopp');
+        this.playerid = player;
+    }
+    displayPlayerName(){
+        var player: [number, string][];
+        player = [[11, "Mo Salah"],[10, "Sadio Mane"],[9, "Bobby Firmino"]];
+
+        console.log(player[this.playerid]);
+    }
+}
+
+let player = new Player(0);
+player.displayPlayerName();
