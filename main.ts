@@ -131,12 +131,21 @@ class Player extends Manager{
         this.playerid = player;
     }
     displayPlayerName(){
-        var player: [number, string][];
-        player = [[11, "Mo Salah"],[10, "Sadio Mane"],[9, "Bobby Firmino"]];
+       // var player: [number, string][];
+       // player = [[11, "Mo Salah"],[10, "Sadio Mane"],[9, "Bobby Firmino"]];
 
-        console.log(player[this.playerid]);
+       // console.log(player[this.playerid]);
+       let array = [
+           {id: 11, value: "Mo Salah"    },
+           {id: 10, value: "Sadio Mane"    },
+           {id: 9, value: "Bobby Firmino"    }
+        ];
+
+        let playerName = array.filter(i => i.id === this.playerid)[0];
+
+        console.log(`Player is : ${playerName.value} and his shirt number is :  ${playerName.id}`);
     }
 }
 
-let player = new Player(0);
+let player = new Player(10);
 player.displayPlayerName();

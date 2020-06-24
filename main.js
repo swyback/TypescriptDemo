@@ -110,19 +110,25 @@ m1.greet();
 console.log(m1.employeeName);
 var Player = /** @class */ (function (_super) {
     __extends(Player, _super);
-
     function Player(player) {
         var _this = _super.call(this, 'Jurgen Klopp') || this;
         _this.playerid = player;
         return _this;
     }
     Player.prototype.displayPlayerName = function () {
-        var player;
-        player = [[11, "Mo Salah"], [10, "Sadio Mane"], [9, "Bobby Firmino"]];
-        console.log(player[this.playerid]);
+        // var player: [number, string][];
+        // player = [[11, "Mo Salah"],[10, "Sadio Mane"],[9, "Bobby Firmino"]];
+        var _this = this;
+        // console.log(player[this.playerid]);
+        var array = [
+            { id: 11, value: "Mo Salah" },
+            { id: 10, value: "Sadio Mane" },
+            { id: 9, value: "Bobby Firmino" }
+        ];
+        var playerName = array.filter(function (i) { return i.id === _this.playerid; })[0];
+        console.log("Player is : " + playerName.value + " and his shirt number is :  " + playerName.id);
     };
     return Player;
 }(Manager));
-var player = new Player(0);
+var player = new Player(10);
 player.displayPlayerName();
-
