@@ -130,5 +130,5 @@ var Player = /** @class */ (function (_super) {
     };
     return Player;
 }(Manager));
-var player = new Player(10);
+var player = new Player(11);
 player.displayPlayerName();

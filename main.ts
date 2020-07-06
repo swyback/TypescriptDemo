@@ -138,7 +138,8 @@ class Player extends Manager{
        let array = [
            {id: 11, value: "Mo Salah"    },
            {id: 10, value: "Sadio Mane"    },
-           {id: 9, value: "Bobby Firmino"    }
+           {id: 9, value: "Bobby Firmino"    },
+           {id: 13, value: "Divock Origi"    }
         ];
 
         let playerName = array.filter(i => i.id === this.playerid)[0];
@@ -147,5 +148,5 @@ class Player extends Manager{
     }
 }
 
-let player = new Player(10);
+let player = new Player(11);
 player.displayPlayerName();
