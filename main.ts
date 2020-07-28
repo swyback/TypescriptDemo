@@ -148,5 +148,5 @@ class Player extends Manager{
     }
 }
 
-let player = new Player(11);
+let player = new Player(10);
 player.displayPlayerName();
