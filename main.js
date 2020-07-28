@@ -123,7 +123,8 @@ var Player = /** @class */ (function (_super) {
         var array = [
             { id: 11, value: "Mo Salah" },
             { id: 10, value: "Sadio Mane" },
-            { id: 9, value: "Bobby Firmino" }
+            { id: 9, value: "Bobby Firmino" },
+            { id: 13, value: "Divock Origi" }
         ];
         var playerName = array.filter(function (i) { return i.id === _this.playerid; })[0];
         console.log("Player is : " + playerName.value + " and his shirt number is :  " + playerName.id);
